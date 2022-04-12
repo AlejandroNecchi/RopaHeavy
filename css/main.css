@@ -21,6 +21,7 @@
     justify-content: center;
 }
 
+
 /* inicio header */
 header{
     grid-area: header;
@@ -91,6 +92,12 @@ img{
 .menu nav ul li a{
     text-decoration: none;
     color: black;
+}
+
+nav ul li:hover{
+    background-color: rgb(37, 34, 212);
+    transform: scale(1.05);
+    box-shadow: 2px 3px 3px rgb(83, 83, 189);
 }
 /* fin header */
 /* inicio imagenes de beneficios */
@@ -220,6 +227,15 @@ img{
     width: 400px;
     height: 400px;
     margin: 53px 20px 20px 20px;
+}
+
+.vestimentaHover{
+    transition: 1s;
+}
+
+.vestimentaHover:hover{
+    transform: scale(1.020);
+    border-radius: 10px;
 }
 
 .camperas{
@@ -684,6 +700,15 @@ footer{
     display: flex;
     justify-content: center;
     margin-bottom: 140px;
+}
+
+.imgsProductosHover{
+    transition: 1s;
+}
+
+.imgsProductosHover:hover{
+    transform: scale(1.020);
+    border-radius: 10px;
 }
 
 .remeraMangaCortaProd{
