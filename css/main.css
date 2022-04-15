@@ -396,57 +396,27 @@ footer{
 /* fin footer */
 /* fin grid index */
 
-/* inicio grid cambios y devoluciones */
-.gridCambiosDevoluciones{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    grid-template-areas: "header header header header"
-                         "menu menu menu menu"
-                         "cambiosYDevoluciones cambiosYDevoluciones cambiosYDevoluciones cambiosYDevoluciones"
-                         "preguntasYDetalles preguntasYDetalles preguntasYDetalles preguntasYDetalles"
-                         "redesSociales redesSociales redesSociales redesSociales"
-                         "tarjetas tarjetas tarjetas tarjetas"
-                         "footer footer footer footer";
-    gap: 10px;
-    justify-content: center;
-}
+/* inicio bootstrap cambios y devoluciones */
 
 .cambiosYDevoluciones{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    text-align: center;
     font-size: 3rem;
-    height: 50px;
-    width: 600px;
-    left: 650px;
     font-weight: bold;
     color: rgb(34, 81, 212);
 }
 
 .preguntasYDetalles{
-    position: relative;
-    margin: 100px;
     font-size: 1.2rem;
-    display: flex;
-    flex-wrap: wrap;
     width: 585px;
-    right: 50px;
 }
 
 .preguntasYDetallesP{
     font-weight: bold;
-    margin: 10px;
-    position: relative;
-    right: 10px;
 }
 
 .preguntasYDetallesP2{
     margin-bottom: 30px;
 }
-/* fin grid cambios y devoluciones*/
+/* fin bootstrap cambios y devoluciones*/
 
 /* inicio grid contacto*/
 
