@@ -1154,12 +1154,96 @@ footer{
         width: 140px;
         top: 100px;
     }
-
-
-
-
-
-
 }
 
 /* fin media querie contacto max-width 375px (mobile) */
+/* inicio media querie productos max-width 375px (mobile) */
+
+@media only screen and (max-width:375px){
+    .gridProductos{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas: "header header"
+                             "menu menu"
+                             "productos productos"
+                             "imgsProductos imgsProductos"
+                             "imgsProductos2 imgsProductos2"
+                             "redesSociales redesSociales"
+                             "tarjetas tarjetas"
+                             "footer footer";
+    }
+    
+    .productos{
+        font-size: 2rem;
+        top: 50px;
+        left: 0px;
+    }
+
+    .imgsProductos{
+        height: 1950px;
+        width: 375px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+    
+    }
+
+    .accesoriosProd{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .jeansProd{
+        position: relative;
+        bottom: 110px;
+    }
+
+    .descRemeraMangaCortaProd{
+        left: 70px;
+    }
+
+    .descVestidosProd{
+        position: relative;
+        left: 125px;
+    }
+
+    .imgsProductos2{
+        height: 375px;
+        width: 375px;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        bottom: 100px;
+    }
+
+    .borcegosProd{
+        position: relative;
+        bottom: 80px;
+    }
+
+    .shortsProd{
+        position: relative;
+        bottom: 130px;
+    }
+
+    .remeraMangaLargaProd{
+        position: relative;
+        bottom: 180px;
+    }
+
+    .zapatillasProd{
+        position: relative;
+        bottom: 170px;
+    }
+
+    .descCinturonesProd{
+        left: 110px;
+    }
+
+    .descZapatillasProd{
+        left: 120px;
+    }
+
+}
