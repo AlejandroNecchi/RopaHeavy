@@ -1,3 +1,93 @@
+/* inicio grid sobre nosotros*/
+.gridSobreNosotros {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: "header header header "
+ "menu menu menu"
+ "sobreNosotros sobreNosotros sobreNosotros"
+ "descSobreNosotros imgPerchero imgPerchero"
+ "frenteLocal mapa mapa"
+ "redesSociales redesSociales redesSociales"
+ "tarjetas tarjetas tarjetas"
+ "footer footer footer";
+  gap: 10px; }
+
+/* inicio de subtitulo*/
+.sobreNosotros {
+  grid-area: sobreNosotros;
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #2251d4;
+  font-weight: bold;
+  right: 30px;
+  margin-bottom: 100px; }
+
+/* fin de subtitulo */
+/* inicio descripcion sobre nosotros*/
+.descSobreNosotros {
+  grid-area: descSobreNosotros;
+  position: relative;
+  color: #2251d4;
+  margin: 100px;
+  font-size: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 410px;
+  left: 30%;
+  bottom: 20%; }
+
+.descSobreNosotros2 {
+  font-weight: bold;
+  margin: 10px;
+  position: relative;
+  right: 9px; }
+
+.descSobreNosotros3 {
+  margin-bottom: 10px; }
+
+.descSobreNosotros4 {
+  margin-bottom: 80px; }
+
+/* fin descripcion sobre nosotros*/
+/* inicio imagen del perchero*/
+.imgPerchero {
+  grid-area: imgPerchero;
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  left: 25%; }
+
+/* fin imagen del perchero*/
+/* inicio imagen frente del local */
+.frenteLocal {
+  grid-area: frenteLocal;
+  position: relative;
+  display: flex;
+  height: 400px;
+  width: 600px;
+  left: 46.5%;
+  bottom: 35%; }
+
+/* fin imagen frente del local */
+/* inicio del mapa ubicacion del local*/
+.mapa {
+  grid-area: mapa;
+  position: relative;
+  display: flex;
+  left: 25%;
+  bottom: 35%;
+  width: 600px;
+  height: 400px; }
+
+/* fin del mapa ubicacion del local */
+/* fin grid sobre nosotros */
+
+
 *{
     margin: 0;
     padding: 0;
@@ -535,100 +625,6 @@ footer{
 }
 /* fin de formulario de contacto */
 /* fin grid contacto*/
-
-/* inicio grid sobre nosotros*/
-
-
-.gridSobreNosotros{
-    height: 100vh;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-areas: "header header header "
-                         "menu menu menu"
-                         "sobreNosotros sobreNosotros sobreNosotros"
-                         "descSobreNosotros imgPerchero imgPerchero"
-                         "frenteLocal mapa mapa"
-                         "redesSociales redesSociales redesSociales"
-                         "tarjetas tarjetas tarjetas"
-                         "footer footer footer";
-    gap: 10px;
-}
-/* inicio de subtitulo*/
-.sobreNosotros{
-    grid-area: sobreNosotros;
-    font-size: 3rem;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    color: rgb(34, 81, 212);
-    font-weight: bold;
-    right: 30px;
-    margin-bottom: 100px;
-}
-/* fin de subtitulo */
-/* inicio descripcion sobre nosotros*/
-.descSobreNosotros{
-    grid-area: descSobreNosotros;
-    position: relative;
-    color: rgb(34, 81, 212);
-    margin: 100px;
-    font-size: 1.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    width: 410px;
-    left: 30%;
-    bottom: 20%;
-}
-
-.descSobreNosotros2{
-    font-weight: bold;
-    margin: 10px;
-    position: relative;
-    right: 9px;
-}
-
-.descSobreNosotros3{
-    margin-bottom: 10px;
-}
-
-.descSobreNosotros4{
-    margin-bottom: 80px;
-}
-/* fin descripcion sobre nosotros*/
-/* inicio imagen del perchero*/
-.imgPerchero{
-    grid-area: imgPerchero;
-    position: relative;
-    width: 600px;
-    height: 400px;
-    display: flex;
-    left: 25%;
-}
-/* fin imagen del perchero*/
-/* inicio imagen frente del local */
-.frenteLocal{
-    grid-area: frenteLocal;
-    position: relative;
-    display: flex;
-    height: 400px;
-    width: 600px;
-    left: 46.5%;
-    bottom: 35%;
-}
-/* fin imagen frente del local */
-/* inicio del mapa ubicacion del local*/
-.mapa{
-    grid-area: mapa;
-    position: relative;
-    display: flex;
-    left: 25%;
-    bottom: 35%;
-    width: 600px;
-    height: 400px;
-}
-/* fin del mapa ubicacion del local */
-/* fin grid sobre nosotros */
 
 /* inicio grid productos */
 .gridProductos{
