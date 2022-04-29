@@ -1,17 +1,567 @@
+.beneficios {
+  height: 70px;
+  width: 99vw;
+  margin: 200px 0px 300px 0px; }
+
+* {
+  margin: 0px;
+  padding: 0px; }
+
+/* inicio grid index */
+.gridIndex {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-areas: "header header header header" "menu menu menu menu" "beneficios beneficios beneficios beneficios" "vestimenta vestimenta vestimenta vestimenta" "redesSociales redesSociales redesSociales redesSociales" "tarjetas tarjetas tarjetas tarjetas" "footer footer footer footer";
+  gap: 10px;
+  justify-content: center; }
+
+img {
+  max-width: 100%;
+  max-height: 100%; }
+
+/* inicio header */
+header {
+  grid-area: header;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  height: auto;
+  width: auto; }
+  header h1 {
+    flex: 10%;
+    position: relative;
+    text-align: center;
+    color: #2251d4;
+    text-transform: uppercase;
+    top: 80px;
+    right: 400px;
+    max-width: 50px;
+    font-size: 2.3rem; }
+  header h2 {
+    flex: 30%;
+    position: relative;
+    text-align: center;
+    color: #2251d4;
+    text-transform: uppercase;
+    top: 130px;
+    right: 20%; }
+  header .imagenHeader {
+    flex: 5%;
+    position: relative;
+    top: 0px;
+    left: 30px;
+    height: 300px;
+    width: 300px; }
+
+/* inicio menu header */
+.menu {
+  grid-area: menu;
+  position: static;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  font-weight: bold; }
+  .menu nav ul li {
+    background-color: #2251d4;
+    display: inline-block;
+    padding: 10px;
+    margin: 20px;
+    text-transform: uppercase;
+    border-radius: 0px 0px 5px 5px;
+    position: relative;
+    bottom: 30px; }
+    .menu nav ul li a {
+      text-decoration: none;
+      color: black; }
+    .menu nav ul li:hover {
+      background-color: #2522d4;
+      transform: scale(1.05);
+      box-shadow: 2px 3px 3px #5353bd; }
+
+/* fin menu header */
+/* fin header */
+/* inicio imagenes de beneficios */
+.beneficios {
+  grid-area: beneficios;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold; }
+  .beneficios .envios {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    left: 100px; }
+    .beneficios .envios .descEnvios {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      max-width: 145px;
+      font-size: 1rem;
+      top: 13px; }
+  .beneficios .cuotas {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    left: 70px; }
+    .beneficios .cuotas .descCuotas {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      max-width: 220px;
+      font-size: 1rem;
+      top: 13px; }
+  .beneficios .descuento {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    bottom: 3px;
+    left: 20px; }
+    .beneficios .descuento .descDescuento {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      max-width: 275px;
+      font-size: 1rem;
+      top: 13px; }
+  .beneficios .seguridad {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    bottom: 5px; }
+    .beneficios .seguridad .descSeguridad {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      max-width: 225px;
+      font-size: 1rem;
+      top: 10px; }
+  .beneficios .consultas {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    right: 30px; }
+    .beneficios .consultas .descConsultas {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      max-width: 235px;
+      font-size: 1rem;
+      top: 15px; }
+  .beneficios .quedateEnCasa {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    bottom: 5px;
+    right: 60px; }
+    .beneficios .quedateEnCasa .descQuedateEnCasa {
+      position: relative;
+      text-align: center;
+      display: inline-block;
+      max-width: 165px;
+      font-size: 1rem;
+      top: 10px; }
+
+/* fin imagenes de beneficios */
+/* inicio de vestimenta */
+.vestimenta {
+  grid-area: vestimenta;
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .vestimenta .vestimentaHover {
+    transition: 1s; }
+    .vestimenta .vestimentaHover:hover {
+      transform: scale(1.02);
+      border-radius: 10px; }
+  .vestimenta .calzado {
+    width: 400px;
+    height: 400px;
+    margin: 53px 20px 20px 20px; }
+    .vestimenta .calzado .descVestCalzado {
+      position: relative;
+      left: 150px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      top: 10px; }
+  .vestimenta .camperas {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px 20px 20px 60px; }
+    .vestimenta .camperas .descVestCamperas {
+      position: relative;
+      max-width: 90px;
+      left: 45px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.5rem;
+      top: 10px; }
+  .vestimenta .jeans {
+    height: 300px;
+    width: 200px;
+    margin: 20px 70px 20px 70px; }
+    .vestimenta .jeans .descVestJeans {
+      position: relative;
+      font-weight: bold;
+      font-size: 1.5rem;
+      left: 70px;
+      top: 10px; }
+  .vestimenta .remeras {
+    max-width: 300px;
+    max-height: 300px;
+    margin: 20px 60px 20px 20px; }
+    .vestimenta .remeras .descVestRemeras {
+      position: relative;
+      right: 75px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      left: 55px;
+      top: 10px; }
+  .vestimenta .vestidos {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 53px 20px 20px 20px; }
+    .vestimenta .vestidos .descVestVestidos {
+      position: relative;
+      right: 75px;
+      font-weight: bold;
+      font-size: 1.5rem;
+      left: 160px;
+      top: 10px;
+      width: 150px; }
+
+/* fin de vestimenta */
+/* inicio redes sociales */
+.redesSociales {
+  grid-area: redesSociales;
+  max-height: 80px;
+  max-width: 80px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 870px;
+  bottom: 0px; }
+  .redesSociales .ig {
+    height: 42px;
+    width: 55px;
+    padding: 4px; }
+  .redesSociales .fb {
+    height: 45px;
+    width: 55px;
+    position: relative;
+    top: 4px;
+    left: 10px; }
+
+/* fin redes sociales */
+/* inicio tarjetas */
+.tarjetas {
+  grid-area: tarjetas;
+  max-width: 500px;
+  max-height: 600px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  left: 660px; }
+  .tarjetas .visa {
+    padding: 10px; }
+  .tarjetas .master {
+    padding: 10px; }
+  .tarjetas .amex {
+    padding: 10px; }
+  .tarjetas .cabal {
+    padding: 10px; }
+  .tarjetas .naranja {
+    padding: 10px; }
+  .tarjetas .mercpago {
+    padding: 10px; }
+  .tarjetas .banelco {
+    padding: 10px; }
+
+/* fin tarjetas */
+/* inicio footer */
+footer {
+  grid-area: footer;
+  font-weight: bold;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-evenly; }
+
+/* fin footer */
+/* fin grid index */
+/* inicio grid productos */
+.gridProductos {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: "header header header header" "menu menu menu menu" "productos productos productos productos"   "imgsProductos imgsProductos imgsProductos imgsProductos" "imgsProductos2 imgsProductos2 imgsProductos2 imgsProductos2" "redesSociales redesSociales redesSociales redesSociales" "tarjetas tarjetas tarjetas tarjetas" "footer footer footer footer";
+  gap: 10px;
+  justify-content: center; }
+
+/* inicio subtitulo productos */
+.productos {
+  grid-area: productos;
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #2251d4;
+  font-weight: bold;
+  right: 30px;
+  margin-bottom: 100px; }
+
+/* fin subtitulo productos */
+/* inicio imagenes de productos 1 */
+.imgsProductos {
+  grid-area: imgsProductos;
+  position: relative;
+  height: 350px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px; }
+  .imgsProductos .imgsProductosHover {
+    transition: 1s; }
+    .imgsProductos .imgsProductosHover:hover {
+      transform: scale(1.02);
+      border-radius: 10px; }
+  .imgsProductos .remeraMangaCortaProd {
+    margin: 20px;
+    width: 450px;
+    height: 400px; }
+    .imgsProductos .remeraMangaCortaProd .descRemeraMangaCortaProd {
+      position: relative;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 200px;
+      left: 120px;
+      top: 10px; }
+  .imgsProductos .accesoriosProd {
+    margin: 20px;
+    width: 200px;
+    height: 400px; }
+    .imgsProductos .accesoriosProd .descAccesoriosProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 100px;
+      left: 45px;
+      top: 10px; }
+  .imgsProductos .jeansProd {
+    margin: 40px 0px 0px 20px;
+    width: 200px;
+    height: 280px; }
+    .imgsProductos .jeansProd .descJeansProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 60px;
+      left: 65px;
+      top: 10px; }
+  .imgsProductos .camperasDeCueroProd {
+    margin: 20px;
+    width: 200px;
+    height: 400px; }
+    .imgsProductos .camperasDeCueroProd .descCamperasDeCueroProd {
+      position: relative;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 200px;
+      top: 10px; }
+  .imgsProductos .vestidosProd {
+    margin: 20px;
+    width: 450px;
+    height: 400px; }
+    .imgsProductos .vestidosProd .descVestidosProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      left: 180px;
+      top: 10px;
+      width: 100px; }
+
+/* fin imagenes de productos 1 */
+/* inicio imagenes de productos 2*/
+.imgsProductos2 {
+  grid-area: imgsProductos2;
+  position: relative;
+  height: 350px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px; }
+  .imgsProductos2 .imgsProductos2Hover {
+    transition: 1s; }
+    .imgsProductos2 .imgsProductos2Hover:hover {
+      transform: scale(1.02);
+      border-radius: 10px; }
+  .imgsProductos2 .cinturonesProd {
+    margin: 20px;
+    width: 450px;
+    height: 400px; }
+    .imgsProductos2 .cinturonesProd .descCinturonesProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      left: 165px;
+      top: 10px; }
+  .imgsProductos2 .borcegosProd {
+    margin: 20px;
+    width: 200px;
+    height: 400px; }
+    .imgsProductos2 .borcegosProd .descBorcegosProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      left: 55px;
+      top: 10px; }
+  .imgsProductos2 .shortsProd {
+    margin: 70px 20px 20px 20px;
+    width: 200px;
+    height: 400px; }
+    .imgsProductos2 .shortsProd .descShortsProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      left: 65px;
+      top: 10px; }
+  .imgsProductos2 .remeraMangaLargaProd {
+    margin: 20px;
+    width: 200px;
+    height: 400px; }
+    .imgsProductos2 .remeraMangaLargaProd .descRemeraMangaLargaProd {
+      position: relative;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      width: 200px;
+      top: 10px; }
+  .imgsProductos2 .zapatillasProd {
+    margin: 20px;
+    width: 450px;
+    height: 400px; }
+    .imgsProductos2 .zapatillasProd .descZapatillasProd {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      left: 165px;
+      top: 10px;
+      width: 120px; }
+
+/* fin imagenes de productos 2*/
+/* fin grid productos*/
+/* inicio grid contacto*/
+.gridContacto {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(8, 1fr);
+  grid-template-areas: "header header header" "menu menu menu" "contacto contacto contacto" "emailYDirec emailYDirec emailYDirec" "formDeContacto formDeContacto formDeContacto" "redesSociales redesSociales redesSociales" "tarjetas tarjetas tarjetas" "footer footer footer";
+  gap: 10px; }
+
+/* inicio de subtitulo */
+.contacto {
+  grid-area: contacto;
+  font-size: 3rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: #2251d4;
+  font-weight: bold;
+  right: 30px; }
+
+/* fin de subtitulo */
+/* inicio de email y direccion*/
+.emailYDirec {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100px;
+  width: 310px;
+  top: 30px;
+  left: 750px;
+  font-weight: bold;
+  color: #2251d4; }
+  .emailYDirec .emailYDirec1 {
+    position: relative;
+    margin: 10px; }
+  .emailYDirec .emailYDirec2 {
+    position: relative;
+    margin: 10px; }
+
+/* fin de email y direccion*/
+/* inicio de formulario de contacto*/
+.formDeContacto {
+  width: 50vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  right: 30px;
+  top: 150px; }
+  .formDeContacto .nombreC {
+    border-radius: 30px;
+    margin: 20px;
+    height: 28px;
+    width: 500px;
+    padding: 5px; }
+  .formDeContacto .emailC {
+    border-radius: 30px;
+    margin: 20px;
+    height: 28px;
+    width: 500px;
+    padding: 5px; }
+  .formDeContacto .provinciaC {
+    border-radius: 20px;
+    margin: 20px;
+    height: 40px;
+    width: 515px;
+    padding: 5px; }
+  .formDeContacto .telefonoC {
+    border-radius: 30px;
+    margin: 20px;
+    height: 28px;
+    width: 500px;
+    padding: 5px; }
+  .formDeContacto .mensajeC {
+    border-radius: 20px;
+    margin: 20px;
+    height: 140px;
+    width: 500px;
+    padding: 5px 0px 110px 5px; }
+  .formDeContacto .enviarC {
+    border-radius: 20px;
+    margin: 20px 20px 280px 20px;
+    height: 40px;
+    width: 140px;
+    top: 100px; }
+
+/* fin de formulario de contacto */
+/* fin grid contacto*/
 /* inicio grid sobre nosotros*/
 .gridSobreNosotros {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(8, 1fr);
-  grid-template-areas: "header header header "
- "menu menu menu"
- "sobreNosotros sobreNosotros sobreNosotros"
- "descSobreNosotros imgPerchero imgPerchero"
- "frenteLocal mapa mapa"
- "redesSociales redesSociales redesSociales"
- "tarjetas tarjetas tarjetas"
- "footer footer footer";
+  grid-template-areas: "header header header " "menu menu menu" "sobreNosotros sobreNosotros sobreNosotros" "descSobreNosotros imgPerchero imgPerchero" "frenteLocal mapa mapa" "redesSociales redesSociales redesSociales" "tarjetas tarjetas tarjetas" "footer footer footer";
   gap: 10px; }
 
 /* inicio de subtitulo*/
@@ -31,7 +581,7 @@
 .descSobreNosotros {
   grid-area: descSobreNosotros;
   position: relative;
-  color: #2251d4;
+  color: black;
   margin: 100px;
   font-size: 1.5rem;
   display: flex;
@@ -86,1149 +636,42 @@
 
 /* fin del mapa ubicacion del local */
 /* fin grid sobre nosotros */
-
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* inicio grid index */
-.gridIndex{
+/* inicio grid cambios y devoluciones */
+.gridCambiosDevoluciones {
   height: 100vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 1fr);
-  grid-template-areas: "header header header header"
-                       "menu menu menu menu"
-                       "beneficios beneficios beneficios beneficios"
-                       "vestimenta vestimenta vestimenta vestimenta"
-                       "redesSociales redesSociales redesSociales redesSociales"
-                       "tarjetas tarjetas tarjetas tarjetas"
-                       "footer footer footer footer";
+  grid-template-areas: "header header header header" "menu menu menu menu" "cambiosYDevoluciones cambiosYDevoluciones cambiosYDevoluciones cambiosYDevoluciones" "preguntasYDetalles preguntasYDetalles preguntasYDetalles preguntasYDetalles" "redesSociales redesSociales redesSociales redesSociales" "tarjetas tarjetas tarjetas tarjetas" "footer footer footer footer";
   gap: 10px;
+  justify-content: center; }
+
+.cambiosYDevoluciones {
+  position: relative;
+  display: flex;
   justify-content: center;
-}
-
-/* inicio header */
-header{
-  grid-area: header;
-  background-color: rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
-  height: auto;
-  width: auto;
-}
-
-h1{
-  flex: 10%;
-  position: relative;
   text-align: center;
-  color:rgb(34, 81, 212);
-  text-transform:uppercase;
-  top: 80px;
-  right: 400px;
-  max-width: 50px;
-  font-size: 2.3rem;
-}
-
-h2{
-  flex: 30%;
-  position: relative;
-  text-align: center;
-  color:rgb(34, 81, 212);
-  text-transform:uppercase;
-  top: 130px;
-  right: 20%;
-}
-
-img{
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.imagenHeader{
-  flex: 5%;
-  position: relative;
-  top: 0px;
-  left: 30px;
-  height: 300px;
-  width: 300px;
-}
-
-.menu{
-  grid-area: menu;
-  position: static;
-  top: 0;
-  z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  font-weight: bold;
-}
-
-.menu li{
-  background-color: rgb(34, 81, 212);
-  display:inline-block ;
-  padding: 10px;
-  margin: 20px;
-  text-transform: uppercase;
-  border-radius: 0px 0px 5px 5px;
-  position: relative;
-  bottom: 30px;
-}
-
-.menu nav ul li a{
-  text-decoration: none;
-  color: black;
-}
-
-nav ul li:hover{
-  background-color: rgb(37, 34, 212);
-  transform: scale(1.05);
-  box-shadow: 2px 3px 3px rgb(83, 83, 189);
-}
-/* fin header */
-/* inicio imagenes de beneficios */
-.beneficios{
-  grid-area: beneficios;
-  position: relative;
-  z-index: 1;
-  height: 70px;
-  width: 99vw;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  font-weight: bold;
-  margin: 200px 0px 300px 0px;
-}
-
-.envios{
-  position: relative;
-  text-align:center;
-  display: inline-block;
-  left: 100px;
-}
-
-.cuotas{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  left: 70px;
-}
-
-.descuento{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  bottom: 3px;
-  left: 20px;
-}
-
-.seguridad{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  bottom: 5px;
-}
-
-.consultas{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  right: 30px;
-}
-
-.quedateEnCasa{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  bottom: 5px;
-  right: 60px;
-}
-
-.descEnvios{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  max-width: 145px;
-  font-size: 1rem;
-  top: 13px;
-}
-
-.descCuotas{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  max-width: 220px;
-  font-size: 1rem;
-  top: 13px;
-}
-
-.descDescuento{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  max-width: 275px;
-  font-size: 1rem;
-  top: 13px;
-}
-
-.descSeguridad{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  max-width: 225px;
-  font-size: 1rem;
-  top: 10px;
-}
-
-.descConsultas{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  max-width: 235px;
-  font-size: 1rem;
-  top: 15px;
-}
-
-.descQuedateEnCasa{
-  position: relative;
-  text-align: center;
-  display: inline-block;
-  max-width: 165px;
-  font-size: 1rem;
-  top: 10px;
-}
-/* fin imagenes de beneficios */
-/* inicio de vestimenta */
-.vestimenta{
-  grid-area: vestimenta;
-  position: relative;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content:center;
-}
-
-.calzado{
-  width: 400px;
-  height: 400px;
-  margin: 53px 20px 20px 20px;
-}
-
-.vestimentaHover{
-  transition: 1s;
-}
-
-.vestimentaHover:hover{
-  transform: scale(1.020);
-  border-radius: 10px;
-}
-
-.camperas{
-  max-width: 300px;
-  max-height: 300px;
-  margin: 20px 20px 20px 60px;
-}
-
-.jeans{
-  height: 300px;
-  width: 200px;
-  margin: 20px 70px 20px 70px;
-}
-
-.remeras{
-  max-width: 300px;
-  max-height: 300px;
-  margin: 20px 60px 20px 20px;
-}
-
-.vestidos{
-  max-width: 400px;
-  max-height: 400px;
-  margin: 53px 20px 20px 20px;
-}
-
-.descVestCalzado{
-  position: relative;
-  left: 150px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  top: 10px;
-}
-
-.descVestCamperas{
-  position: relative;
-  max-width: 90px;
-  left: 45px;
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.5rem;
-  top: 10px;
-}
-
-.descVestJeans{
-  position: relative;
-  font-weight: bold;
-  font-size: 1.5rem;
-  left: 70px;
-  top: 10px;
-}
-
-.descVestRemeras{
-  position: relative;
-  right: 75px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  left: 55px;
-  top: 10px;
-}
-
-.descVestVestidos{
-  position: relative;
-  right: 75px;
-  font-weight: bold;
-  font-size: 1.5rem;
-  left: 160px;
-  top: 10px;
-  width: 150px;
-}
-/* fin de vestimenta */
-/* inicio redes sociales */
-.redesSociales{
-  grid-area: redesSociales;
-  max-height: 80px;
-  max-width: 80px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  left: 870px;
-  bottom: 0px;
-}
-
-.ig{
-  height: 42px;
-  width: 55px;
-  padding: 4px;
-}
-
-.fb{
-  height: 45px;
-  width: 45px;
-  position: relative;
-  top: 4px;
-  left: 10px;
-}
-/* fin redes sociales */
-/* inicio tarjetas */
-.tarjetas{
-  grid-area: tarjetas;
-  max-width: 500px;
-  max-height: 600px;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  position: relative;
-  left: 660px;
-}
-
-.visa{
-  padding: 10px;
-}
-
-.master{
-  padding: 10px;
-}
-
-.amex{
-  padding: 10px;
-}
-
-.cabal{
-  padding: 10px;
-}
-
-.naranja{
-  padding: 10px;
-}
-
-.mercpago{
-  padding: 10px;
-}
-
-.banelco{
-  padding: 10px;
-}
-/* fin tarjetas */
-/* inicio footer */
-footer{
-  grid-area: footer;
-  font-weight: bold;
-  font-size: 0.8rem;
-  display: flex;
-  justify-content: space-evenly;
-}
-/* fin footer */
-/* fin grid index */
-
-/* inicio bootstrap cambios y devoluciones */
-
-.cambiosYDevoluciones{
   font-size: 3rem;
+  height: 50px;
+  width: 600px;
+  left: 650px;
   font-weight: bold;
-  color: rgb(34, 81, 212);
-}
+  color: #2251d4; }
 
-.preguntasYDetalles{
+.preguntasYDetalles {
+  position: relative;
+  margin: 100px;
   font-size: 1.2rem;
+  display: flex;
+  flex-wrap: wrap;
   width: 585px;
-}
-
-.preguntasYDetallesP{
-  font-weight: bold;
-}
-
-.preguntasYDetallesP2{
-  margin-bottom: 30px;
-}
-/* fin bootstrap cambios y devoluciones*/
-
-/* inicio grid contacto*/
-
-.gridContacto{
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-template-areas: "header header header"
-                       "menu menu menu"
-                       "contacto contacto contacto"
-                       "emailYDirec emailYDirec emailYDirec"
-                       "formDeContacto formDeContacto formDeContacto"
-                       "redesSociales redesSociales redesSociales"
-                       "tarjetas tarjetas tarjetas"
-                       "footer footer footer";
-  gap: 10px;
-}
-/* inicio de email y direccion*/
-.emailYDirec{
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  height: 100px;
-  width: 310px;
-  top: 30px;
-  left: 750px;
-  font-weight: bold;
-  color: rgb(34, 81, 212);
-}
-
-.emailYDirec1{
-  position: relative;
-  margin: 10px;
-  
-}
-
-.emailYDirec2{
-  position: relative;
-  margin: 10px;
-  
-}
-/* fin de email y direccion*/
-/* inicio de subtitulo */
-.contacto{
-  grid-area: contacto;
-  font-size: 3rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: rgb(34, 81, 212);
-  font-weight: bold;
-  right: 30px;
-}
-/* fin de subtitulo */
-/* inicio de formulario de contacto*/
-.formDeContacto{
-  width: 50vw;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  right: 30px;
-  top: 150px;
-}
-
-.nombreC{
-  border-radius: 20px;
-  margin: 20px;
-  height: 40px;
-  width: 500px;
-  padding: 5px;
-}
-
-.emailC{
-  border-radius: 20px;
-  margin: 20px;
-  height: 40px;
-  width: 500px;
-  padding: 5px;
-}
-
-.provinciaC{
-  border-radius: 20px;
-  margin: 20px;
-  height: 40px;
-  width: 500px;
-  padding: 5px;
-}
-
-.telefonoC{
-  border-radius: 20px;
-  margin: 20px;
-  height: 40px;
-  width: 500px;
-  padding: 5px;
-}
-
-.mensajeC{
-  border-radius: 20px;
-  margin: 20px;
-  height: 140px;
-  width: 500px;
-  padding: 5px 0px 110px 5px;
-}
-
-.enviarC{
-  border-radius: 20px;
-  margin: 20px 20px 280px 20px;
-  height: 40px;
-  width: 140px;
-  top: 100px;
-}
-/* fin de formulario de contacto */
-/* fin grid contacto*/
-
-/* inicio grid productos */
-.gridProductos{
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(8, 1fr);
-  grid-template-areas: "header header header header"
-                       "menu menu menu menu"
-                       "productos productos productos productos"  
-                       "imgsProductos imgsProductos imgsProductos imgsProductos"
-                       "imgsProductos2 imgsProductos2 imgsProductos2 imgsProductos2"
-                       "redesSociales redesSociales redesSociales redesSociales"
-                       "tarjetas tarjetas tarjetas tarjetas"
-                       "footer footer footer footer";
-  gap: 10px;
-  justify-content: center;
-}
-/* inicio subtitulo productos */
-.productos{
-  grid-area: productos;
-  font-size: 3rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  color: rgb(34, 81, 212);
-  font-weight: bold;
-  right: 30px;
-  margin-bottom: 100px;
-}
-/* fin subtitulo productos */
-/* inicio imagenes de productos 1 */
-.imgsProductos{
-  grid-area: imgsProductos;
-  position: relative;
-  height: 350px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 140px;
-}
-
-.imgsProductosHover{
-  transition: 1s;
-}
-
-.imgsProductosHover:hover{
-  transform: scale(1.020);
-  border-radius: 10px;
-}
-
-.remeraMangaCortaProd{
-  margin: 20px;
-  width: 450px;
-  height: 400px;
-}
-
-.accesoriosProd{
-  margin: 20px;
-  width: 200px;
-  height: 400px;
-}
-
-.jeansProd{
-  margin: 40px 0px 0px 20px;
-  width: 200px;
-  height: 280px;
-}
-
-.camperasDeCueroProd{
-  margin: 20px;
-  width: 200px;
-  height: 400px;
-}
-
-.vestidosProd{
-  margin: 20px;
-  width: 450px;
-  height: 400px;
-}
-
-.descRemeraMangaCortaProd{
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 200px;
-  left: 120px;
-  top: 10px;
-}
-
-.descAccesoriosProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 100px;
-  left: 45px;
-  top: 10px;
-}
-
-.descJeansProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 60px;
-  left: 65px;
-  top: 10px;
-}
-
-.descCamperasDeCueroProd{
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 200px;
-  top: 10px;
-}
-
-.descVestidosProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  left: 180px;
-  top: 10px;
-  width: 100px;
-}
-/* fin imagenes de productos 1 */
-/* inicio imagenes de productos 2*/
-.imgsProductos2{
-  grid-area: imgsProductos2;
-  position: relative;
-  height: 350px;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 140px;
-}
-
-.cinturonesProd{
-  margin: 20px;
-  width: 450px;
-  height: 400px;
-}
-
-.borcegosProd{
-  margin: 20px;
-  width: 200px;
-  height: 400px;
-}
-
-.shortsProd{
-  margin: 70px 20px 20px 20px;
-  width: 200px;
-  height: 400px;
-}
-
-.remeraMangaLargaProd{
-  margin: 20px;
-  width: 200px;
-  height: 400px;
-}
-
-.zapatillasProd{
-  margin: 20px;
-  width: 450px;
-  height: 400px;
-}
-
-.descCinturonesProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  left: 165px;
-  top: 10px;
-}
-
-.descBorcegosProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  left: 55px;
-  top: 10px;
-}
-
-.descShortsProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  left: 65px;
-  top: 10px;
-}
-
-.descRemeraMangaLargaProd{
-  position: relative;
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  width: 200px;
-  top: 10px;
-}
-
-.descZapatillasProd{
-  position: relative;
-  font-size: 1.5rem;
-  font-weight: bold;
-  left: 165px;
-  top: 10px;
-  width: 120px;
-}
-/* fin imagenes de productos 2*/
-
-/* fin grid productos*/
-/* inicio media querie index max-width 375px (mobile) */
-@media only screen and (max-width:375px){
-     .gridIndex{
-      height: 100vw;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(7, 1fr);
-      grid-template-areas: "header header"
-                           "menu menu"
-                           "beneficios beneficios"
-                           "vestimenta vestimenta"
-                           "redesSociales redesSociales"
-                           "tarjetas tarjetas"
-                           "footer footer";
-  }
-
-  img{
-      max-width: 100%;
-      max-height: 100%;
-  }
-
-  h1{
-      flex: 10%;
-      position: relative;
-      text-align: center;
-      color:rgb(34, 81, 212);
-      text-transform:uppercase;
-      top: 25px;
-      right: 100px;
-      max-width: 50px;
-      font-size: 1rem;
-  }
-
-  h2{
-      position: relative;
-      font-size: 0.7rem;
-      max-width: 140px;
-      height: 30px;
-      top: 35px;
-      right: 40px;
-  }
-
-  .imagenHeader{
-      position: relative;
-      width: 100px;
-      height: 100px;
-      left: 7.5px;
-  }
-
-  .menu{
-      grid-area: menu;
-      width: 50px;
-  }
-
-  .menu li{
-      display: none;
-  }
-
-  .envios{
-      width: 80px;
-      bottom: 60px;
-      left: 150px;
-  }
-
-  .cuotas{
-      display: none;
-  }
-
-  .descuento{
-      display: none;
-  }
-
-  .seguridad{
-      display: none;
-  }
-
-  .consultas{
-      display: none;
-  }
-
-  .quedateEnCasa{
-      display: none;
-  }
-
-  .descEnvios{
-      font-size: 1rem;
-      width: 150px;
-      right: 35px;
-  }
-
-  .descCuotas{
-      display: none;
-  }
-
-  .descDescuento{
-      display: none;
-  }
-
-  .descSeguridad{
-      display: none;
-  }
-
-  .descConsultas{
-      display: none;
-  }
-
-  .descQuedateEnCasa{
-      display: none;
-  }
-
-  .vestimenta{
-      height: 375px;
-      width: 375px;
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      bottom: 250px;
-  }
-
-  .camperas{
-      position: relative;
-      left: 30px;
-      bottom: 100px;
-  }
-
-  .jeans{
-      position: relative;
-      bottom: 20px;
-  }
-
-  .remeras{
-      position: relative;
-      left: 68px;
-      top: 60px;
-  }
-
-  .vestidos{
-      position: relative;
-      top: 120px;
-  }
-
-  .descVestCalzado{
-      position: relative;
-      left: 130px;
-      width: 150px;
-  }
-
-  .descVestCamperas{
-      position: relative;
-      width: 150px;
-      display: flex;
-  }
-
-  .descVestJeans{
-      position: relative;
-      width: 150px;
-  }
-
-  .descVestRemeras{
-      position: relative;
-      width: 150px;
-  }
-
-  .descVestVestidos{
-      position: relative;
-      left: 130px;
-      width: 150px;
-  }
-
-  .redesSociales{
-      grid-area: redesSociales;
-      position: relative;
-      width: 50px;
-      left: 160px;
-      top: 1350px;
-  }
-
-  .tarjetas{
-      grid-area: tarjetas;
-      position: relative;
-      left: 45px;
-      width: 300px;
-      top: 1350px;
-  }
-
-  footer{
-      grid-area: footer;
-      position: relative;
-      top: 1350px;
-      font-size: 0.5rem;
-      justify-content: center;
-      max-width: 250px;
-      left: 50px;
-  }
-
-  .footer1{
-      right: 55px;
-  }
-
-  .footer2{
-      right: 35px;
-  }
-
-}
-
-/* fin media querie index max-width 375px (mobile) */
-
-/* inicio media querie contacto max-width 375px (mobile) */
-
-@media only screen and (max-width:375px){
-     .gridContacto{
-      height: 100vh;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-template-areas: "header header"
-                           "menu menu"
-                           "contacto contacto"
-                           "emailYDirec emailYDirec"
-                           "formDeContacto formDeContacto"
-                           "redesSociales redesSociales"
-                           "tarjetas tarjetas"
-                           "footer footer";
-  }
-
-  .h1C{
-      position: relative;
-      right: 232.5px;
-  }
-
-  .h2C{
-      position: relative;
-      right: 172.5px;
-  }
-
-  menu{
-      background-color: red;
-  }
-
-  .contacto{
-      position: relative;
-      right: 63px;
-      font-size: 2rem;
-  }
-
-  .emailYDirec{
-      background-color: pink;
-      position: relative;
-      left: 40px;
-      font-size: 0.8rem;
-  }
-  
-  .formDeContacto{
-      background-color: chartreuse;
-  }
-
-  .formDeContacto{
-      width: 50vw;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      right: 223px;
-      top: 150px;
-  }
-  
-  .nombreC{
-      border-radius: 20px;
-      margin: 20px;
-      height: 40px;
-      width: 200px;
-      padding: 5px;
-  }
-  
-  .emailC{
-      border-radius: 20px;
-      margin: 20px;
-      height: 40px;
-      width: 200px;
-      padding: 5px;
-  }
-  
-  .provinciaC{
-      border-radius: 20px;
-      margin: 20px;
-      height: 40px;
-      width: 200px;
-      padding: 5px;
-  }
-  
-  .telefonoC{
-      border-radius: 20px;
-      margin: 20px;
-      height: 40px;
-      width: 200px;
-      padding: 5px;
-  }
-  
-  .mensajeC{
-      border-radius: 20px;
-      margin: 20px;
-      height: 140px;
-      width: 200px;
-      padding: 5px 0px 110px 5px;
-  }
-  
-  .enviarC{
-      border-radius: 20px;
-      margin: 20px 20px 280px 20px;
-      height: 40px;
-      width: 140px;
-      top: 100px;
-  }
-}
-
-/* fin media querie contacto max-width 375px (mobile) */
-/* inicio media querie productos max-width 375px (mobile) */
-
-@media only screen and (max-width:375px){
-  .gridProductos{
-      height: 100vh;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(8, 1fr);
-      grid-template-areas: "header header"
-                           "menu menu"
-                           "productos productos"
-                           "imgsProductos imgsProductos"
-                           "imgsProductos2 imgsProductos2"
-                           "redesSociales redesSociales"
-                           "tarjetas tarjetas"
-                           "footer footer";
-  }
-  
-  .productos{
-      font-size: 2rem;
-      top: 50px;
-      left: 0px;
-  }
-
-  .imgsProductos{
-      height: 1950px;
-      width: 375px;
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-  }
-
-  .accesoriosProd{
-      position: relative;
-      bottom: 80px;
-  }
-
-  .jeansProd{
-      position: relative;
-      bottom: 110px;
-  }
-
-  .descRemeraMangaCortaProd{
-      left: 70px;
-  }
-
-  .descVestidosProd{
-      position: relative;
-      left: 125px;
-  }
-
-  .imgsProductos2{
-      height: 375px;
-      width: 375px;
-      position: relative;
-      display: flex;
-      flex-wrap: wrap;
-      bottom: 100px;
-  }
-
-  .borcegosProd{
-      position: relative;
-      bottom: 80px;
-  }
-
-  .shortsProd{
-      position: relative;
-      bottom: 130px;
-  }
-
-  .remeraMangaLargaProd{
-      position: relative;
-      bottom: 180px;
-  }
-
-  .zapatillasProd{
-      position: relative;
-      bottom: 170px;
-  }
-
-  .descCinturonesProd{
-      left: 110px;
-  }
-
-  .descZapatillasProd{
-      left: 120px;
-  }
-
-}
+  right: 50px; }
+  .preguntasYDetalles .preguntasYDetallesP {
+    font-weight: bold;
+    margin: 10px;
+    position: relative;
+    right: 10px; }
+  .preguntasYDetalles .preguntasYDetallesP2 {
+    margin-bottom: 30px; }
+
+/* fin grid cambios y devoluciones*/

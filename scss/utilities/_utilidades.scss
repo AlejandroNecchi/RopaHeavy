@@ -1,0 +1,16 @@
+$colores: rgb(34, 81, 212), black,rgb(83, 83, 189);
+
+$menuPrincipal: (
+    bg-hover: rgb(37, 34, 212),
+);
+
+@mixin flex{
+    display: flex;
+    position: relative;
+}
+
+%magnitudes{
+    height: 70px;
+    width: 99vw;
+    margin: 200px 0px 300px 0px;
+}
